@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Component Creator Assistant</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Foundation - Component Creator Assistant</h1>
+            <div class="row">
+                <div class="col">
+                    <h4 class="mt-4 mb-2">Component</h4>
+                    <select class="form-select" aria-label="Default select example" id="dynamicSelect">                        
+                    </select>
+                                       
+                </div>
+            </div>
+
+            <div class="row">
+                <h4 class="mt-4 mb-2">Brand</h4> 
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-brand-habilitado" type="checkbox" value="brand-habilitado" id="brand-habilitado" checked>
+                        <label class="form-check-label-brand-habilitado" for="brand-habilitado">
+                            ¿Este campo esta habilitado?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-brand" type="checkbox" value="personal" id="personal" checked>
+                        <label class="form-check-label" for="personal">
+                            Personal
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-brand" type="checkbox" value="flow" id="flow" checked>
+                        <label class="form-check-label" for="flow">
+                            Flow
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4 class="mt-4 mb-2">Theme</h4> 
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-theme-habilitado" type="checkbox" value="theme-habilitado" id="theme-habilitado" checked>
+                        <label class="form-check-label-theme-habilitado" for="theme-habilitado">
+                            ¿Este campo esta habilitado?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-theme" type="checkbox" value="light" id="light" checked>
+                        <label class="form-check-label" for="light">
+                            Light
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-check">
+                        <input class="form-check-input form-check-input-theme" type="checkbox" value="dark" id="dark" checked>
+                        <label class="form-check-label" for="dark">
+                            Dark
+                        </label>
+                    </div>
+                </div>
+            
+
+                <div class="row">
+                    <h4 class="mt-4 mb-2">Variant</h4> 
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-variant-habilitado" type="checkbox" value="variant-habilitado" id="variant-habilitado" checked>
+                            <label class="form-check-label-variant-habilitado" for="variant-habilitado">
+                                ¿Este campo esta habilitado?
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-variant" type="checkbox" value="primary" id="primary" checked>
+                            <label class="form-check-label" for="primary">
+                                Primary
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-variant" type="checkbox" value="secondary" id="secondary" checked>
+                            <label class="form-check-label" for="secondary">
+                                Secondary
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-variant" type="checkbox" value="tertiary" id="tertiary" checked>
+                            <label class="form-check-label" for="tertiary">
+                                Tertiary
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-variant" type="checkbox" value="select" id="select" checked>
+                            <label class="form-check-label" for="select">
+                                Select
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-variant" type="checkbox" value="bold" id="bold" checked>
+                            <label class="form-check-label" for="bold">
+                                Bold
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h4 class="mt-4 mb-2">Subvariant</h4> 
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant-habilitado" type="checkbox" value="subvariant-habilitado" id="subvariant-habilitado" checked>
+                            <label class="form-check-label-subvariant-habilitado" for="subvariant-habilitado">
+                                ¿Este campo esta habilitado?
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="standard" id="standard" checked>
+                            <label class="form-check-label" for="standard">
+                                Standard
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="success" id="success" checked>
+                            <label class="form-check-label" for="success">
+                                Success
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="warning" id="warning" checked>
+                            <label class="form-check-label" for="warning">
+                                Warning
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="delete" id="delete" checked>
+                            <label class="form-check-label" for="delete">
+                                Delete
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="error" id="error" checked>
+                            <label class="form-check-label" for="error">
+                                Error
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="neutral" id="neutral" checked>
+                            <label class="form-check-label" for="neutral">
+                                Neutral
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="informative" id="informative" checked>
+                            <label class="form-check-label" for="informative">
+                                Informative
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input form-check-input-subvariant" type="checkbox" value="highlight" id="highlight" checked>
+                            <label class="form-check-label" for="highlight">
+                                Highlight
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-success mt-5 mb-5">Launched</button>            
+                    <button type="button" class="btn btn-info mt-5 mb-5">Save as...</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card"> 
+                    <div class="card-body bg-dark text-white rounded p-5">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script>
+
+            function buildObject(classN, attributeName) {
+                const checkboxes = document.querySelectorAll(classN);
+                const props = [];
+                const object = [];
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const id = checkbox.value;
+                        const prop = {
+                            id: id,
+                            family: true,
+                            available: () => true,
+                            skip: false
+                        };
+                        props.push(prop);
+                        object.push({name: attributeName, id: prop, available: () => true})
+                    }
+                });
+                return [
+                    {
+                        attributeName: attributeName,
+                        level: 1,
+                        props: props,
+                        end: false
+                    },
+                    object,
+                ];
+            }
+
+            function handleCheckboxClick(classN, attributeName) {
+                const resultObject0 = buildObject(classN, attributeName)[0];
+                const resultObject1 = buildObject(classN, attributeName)[1];
+            }
+
+            /*function cartesianProduct(object) {
+                const res = [];
+                console.log(object);
+                function generateCombinations(act, index) {
+                    if (index === object.length) {
+                        res.push([act.join("-")]);
+                        return;
+                    }
+
+                    for (const value of object[index].prop) {
+                        generateCombinations([...act, value.id], index + 1);
+                    }
+                }
+                generateCombinations([], 0);
+                return res;
+            }*/
+
+            /* COMPONENT */
+            let componentName = "accordion"
+
+            const datos = [
+                "accordion","Accordion",
+                "alert","Alert",
+                "arrow","Arrow",
+                "attribute_ribbon","Attribute Ribbon",
+                "badge","Badge",
+                "button","Button",
+                "banner","Banner",
+                "breadcrumb","Breadcrumb",
+                "canales_de_contacto","Canales de Contacto",
+                "card","Card",
+                "carrousel","Carrousel",
+                "checkbox","Checkbox",
+                "chips","Chips",
+                "color_storage_selector","Color Storage Selector",
+                "contact_bar","Contact Bar",
+                "countdown","Countdown",
+                "date_picker","Date Picker",
+                "dcvm","DCVM",
+                "divider","Divider",
+                "dots_indicator","Dots Indicator",
+                "dropdown","Dropdown",
+                "empty_states","Empty States",
+                "encuesta","Encuesta",
+                "error_page","Error Page",
+                "error_states","Error States",
+                "facturacion","Facturación",
+                "flag","Flag",
+                "filler_tree","Filler Tree",
+                "floating_button","Floating Button",
+                "footer","Footer",
+                "forms","Forms",
+                "header_secondary","Header Secondary",
+                "hero_banner","Hero Banner",
+                "jumbotron","Jumbotron",
+                "loader","Loader",
+                "list","List",
+                "menu_header","Menu Header",
+                "messages_status","Messages Status",
+                "modals","Modals",
+                "module","Module",
+                "navigation_header","Navigation Header",
+                "one_click","One Click",
+                "order_confirmation","Order Confirmation",
+                "order_detail","Order Detail",
+                "overlay","Overlay",
+                "pagination","Pagination",
+                "packs_y_pases","Packs y Pases",
+                "payment_method_selector","Payment Method Selector",
+                "quantity_selector","Quantity Selector",
+                "quick_access","Quick Access",
+                "quick_link","Quick Link",
+                "radio_button","Radio Button",
+                "scrollbar","Scrollbar",
+                "search_bar","Search Bar",
+                "share","Share",
+                "seo_module","SEO Module",
+                "slider","Slider",
+                "skeleton_loader","Skeleton Loader",
+                "stepper","Stepper",
+                "snackbar","Snackbar",
+                "tab","Tab",
+                "table","Table",
+                "tag","Tag",
+                "text","Text",
+                "text_field","Text Field",
+                "toast","Toast",
+                "toggle_button","Toggle Button",
+                "tooltips","Tooltips"
+            ];
+
+            const selectElement = document.getElementById('dynamicSelect');
+            
+            for (let i = 0; i < datos.length; i += 2) {
+                const option = document.createElement('option');
+                option.value = datos[i]; 
+                option.text = datos[i + 1]; 
+                selectElement.add(option);
+            }
+            
+            selectElement.addEventListener('change', function() {
+                componentName = this.value;
+            });
+
+            /* BRAND */
+            const checkboxesAvailableBrand = document.querySelectorAll('.form-check-input-brand-habilitado');
+            checkboxesAvailableBrand.forEach(checkbox => {
+                checkbox.addEventListener('click', () => {
+                    if (checkbox.checked) {
+                        document.querySelectorAll('.form-check-input-brand').forEach(checkbox => {
+                            checkbox.disabled = false;
+                        });
+                    } else {
+                        document.querySelectorAll('.form-check-input-brand').forEach(checkbox => {
+                            checkbox.disabled = true;
+                        });
+                    }
+                });
+            });
+
+            const checkboxesBrand = document.querySelectorAll('.form-check-input-brand');
+            checkboxesBrand.forEach(checkbox => {
+                checkbox.addEventListener('click',() => handleCheckboxClick('.form-check-input-brand', "brand"));
+            });
+
+            /* THEME */
+            const checkboxesAvailableTheme = document.querySelectorAll('.form-check-input-theme-habilitado');
+            checkboxesAvailableTheme.forEach(checkbox => {
+                checkbox.addEventListener('click', () => {
+                    if (checkbox.checked) {
+                        document.querySelectorAll('.form-check-input-theme').forEach(checkbox => {
+                            checkbox.disabled = false;
+                        });
+                    } else {
+                        document.querySelectorAll('.form-check-input-theme').forEach(checkbox => {
+                            checkbox.disabled = true;
+                        });
+                    }
+                });
+            });
+
+            const checkboxesTheme = document.querySelectorAll('.form-check-input-theme');
+            checkboxesTheme.forEach(checkbox => {
+                checkbox.addEventListener('click',() => handleCheckboxClick('.form-check-input-theme', "theme"));
+            });
+
+            /* VARIANT */
+            const checkboxesAvailableVariant = document.querySelectorAll('.form-check-input-variant-habilitado');
+            checkboxesAvailableVariant.forEach(checkbox => {
+                checkbox.addEventListener('click', () => {
+                    if (checkbox.checked) {
+                        document.querySelectorAll('.form-check-input-variant').forEach(checkbox => {
+                            checkbox.disabled = false;
+                        });
+                    } else {
+                        document.querySelectorAll('.form-check-input-variant').forEach(checkbox => {
+                            checkbox.disabled = true;
+                        });
+                    }
+                });
+            });
+
+            const checkboxesVariant = document.querySelectorAll('.form-check-input-variant');
+            checkboxesVariant.forEach(checkbox => {
+                checkbox.addEventListener('click',() => handleCheckboxClick('.form-check-input-variant', "variant"));
+            });
+
+            /* VARIANT */
+            const checkboxesAvailablesubVariant = document.querySelectorAll('.form-check-input-subvariant-habilitado');
+            checkboxesAvailablesubVariant.forEach(checkbox => {
+                checkbox.addEventListener('click', () => {
+                    if (checkbox.checked) {
+                        document.querySelectorAll('.form-check-input-subvariant').forEach(checkbox => {
+                            checkbox.disabled = false;
+                        });
+                    } else {
+                        document.querySelectorAll('.form-check-input-subvariant').forEach(checkbox => {
+                            checkbox.disabled = true;
+                        });
+                    }
+                });
+            });
+
+            const checkboxesSubVariant = document.querySelectorAll('.form-check-input-subvariant');
+            checkboxesSubVariant.forEach(checkbox => {
+                checkbox.addEventListener('click',() => handleCheckboxClick('.form-check-input-subvariant', "subvariant"));
+            });
+
+
+
+            /* PROCESAR */
+            const button = document.querySelector('.btn');
+            const cardBody = document.querySelector('.card-body');
+
+            const getFields = ( data) => {
+                return(
+                `{
+                    attributeName: ${JSON.stringify(data.attributeName)},
+                    props: [
+                        ${data.props.map(prop => {
+                            return `{
+                                id: "${prop.id}",
+                                family: ${prop.family},
+                                available: ${prop.available},
+                                skip: ${prop.skip},
+                            }`
+                        })}
+                    ]
+                }`)
+            }
+
+            button.addEventListener('click', () => {
+                const resultObjectBrand = buildObject('.form-check-input-brand', "brand")[0];
+                const resultObjectTheme = buildObject('.form-check-input-theme', "theme")[0];
+                const resultObjectVariant = buildObject('.form-check-input-variant', "variant")[0];
+                const resultObjectSubVariant = buildObject('.form-check-input-subvariant', "subvariant")[0];
+
+                const estaHabilitadoBrand = document.querySelector('.form-check-input-brand-habilitado').checked;
+                const estaHabilitadoTheme = document.querySelector('.form-check-input-theme-habilitado').checked;
+                const estaHabilitadoVariant = document.querySelector('.form-check-input-variant-habilitado').checked;
+                const estaHabilitadoSubVariant = document.querySelector('.form-check-input-subvariant-habilitado').checked;
+
+                /*const resCartesianProduct = cartesianProduct([
+                    buildObject('.form-check-input-brand', "brand")[1], 
+                    buildObject('.form-check-input-theme', "theme")[1],
+                    buildObject('.form-check-input-variant', "variant")[1],
+                    buildObject('.form-check-input-subvariant', "subvariant")[1]
+                ]).join(',\n');*/
+
+                //{name: attributeName, id: id, available: () => true}
+                const getBrand = () => {
+                    if(!!estaHabilitadoBrand){
+                        return buildObject('.form-check-input-brand', "brand")[1]
+                            .filter(element => element.available() === true)
+                    }
+                }
+
+
+                let resultObject = `{
+                    componentName: ${JSON.stringify(componentName)},
+                    fields: [
+                        ${[estaHabilitadoBrand && resultObjectBrand, 
+                            estaHabilitadoTheme && resultObjectTheme, 
+                            estaHabilitadoVariant && resultObjectVariant, 
+                            estaHabilitadoSubVariant && resultObjectSubVariant]
+                                .filter(element => element && element.props.length > 0)
+                                .map(element => getFields(element))
+                        }
+                    ]
+                }`;
+
+                
+                cardBody.innerHTML = js_beautify(resultObject, {
+                    "indent_size": 4,
+                    "indent_char": " ",
+                    "indent_level": 0,
+                    "indent_with_tabs": false,
+                    "preserve_newlines": true,
+                    "max_preserve_newlines": 10,
+                    "jslint_happy": false,
+                    "space_after_named_function": false,
+                    "space_after_anon_function": false,
+                    "brace_style": "collapse",
+                    "keep_array_indentation": false,
+                    "keep_function_indentation": false,
+                    "space_before_conditional": true,
+                    "break_chained_methods": false,
+                    "eval_code": false,
+                    "unescape_strings": false,
+                    "wrap_line_length": 0,
+                    "indent_empty_lines": false,
+                    "templating": ["auto"]
+                })
+
+                // Guardar archivo
+                async function saveFile() {
+                    try {
+                        const newHandle = await window.showSaveFilePicker();
+                        const writableStream = await newHandle.createWritable();
+                        await writableStream.write(resultObject); //await writableStream.write(resCartesianProduct);//
+                        await writableStream.close();
+                    } catch (err) {
+                        console.error(err.name, err.message);
+                    }
+                }
+                const saveAs = document.querySelector('.btn-info');
+                saveAs.addEventListener('click', saveFile);
+
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.11/beautify.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.11/beautify-css.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.11/beautify-html.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.11/beautify.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.11/beautify-css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.11/beautify-html.min.js"></script>
+    </body>
+</html>
